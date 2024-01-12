@@ -1,0 +1,11 @@
+<section>
+  <div class="titles">
+    <h1>أشهى الوجبات</h1>
+    <h2>أنت تشتهي ونحن نقدم ما يكفي</h2>
+  </div>
+  <div class="meals">
+    <app-meal-container *ngFor="let m of meals ; let i = index" [src]="m.src" [title]="m.title">
+    </app-meal-container>
+  </div>
+
+</section>
